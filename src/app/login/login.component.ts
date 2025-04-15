@@ -4,8 +4,6 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatCardModule } from '@angular/material/card';
 import { FormsModule } from '@angular/forms';
-// import { NgForm } from '@angular/forms';
-//import { HttpClientModule } from '@angular/common/http';
 
 @Component({
   selector: 'app-login',
@@ -15,13 +13,11 @@ import { FormsModule } from '@angular/forms';
     MatInputModule,
     MatCardModule,
     FormsModule
-    //HttpClientModule
   ],
   templateUrl: './login.component.html',
   styleUrl: './login.component.css'
 })
 export class LoginComponent {
-  //@ViewChild('loginForm') loginForm!: NgForm;
   email = ""
   password = ""
   constructor(private loggerService: LoggerService) {}

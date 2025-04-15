@@ -6,7 +6,7 @@ export class Customer {
     isAdmin: boolean;
     isSuspended: boolean;
 
-    constructor (id: string, name: string, displayName: string, email: string, isAdmin: boolean, isSuspended: boolean) {
+    constructor (id: string = "", name: string = "", displayName: string = "", email: string = "", isAdmin: boolean = false, isSuspended: boolean = true) {
         this.id = id;
         this.name = name;
         this.displayName = displayName;
